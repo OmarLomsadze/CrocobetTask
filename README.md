@@ -4,5 +4,5 @@ This is a Task Given To me By Crocobet To Prove My worth as a Front-End Web Deve
 
 ## Running Locally
 
-npm install
-ng server
+- npm install
+- ng serve
