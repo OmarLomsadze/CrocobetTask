@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
@@ -13,7 +14,7 @@ export class UserComponent implements OnInit, OnDestroy {
   @Input() public user!: User;
   private userSub: Subscription = new Subscription();
 
-  constructor(private httpService: HttpService, private route: ActivatedRoute) {}
+  constructor(private httpService: HttpService, private route: ActivatedRoute,private location: Location) {}
 
   // ვიღებთ ქუერიდან იუზერ აიდის და ვაბრუნებთ იუზერის მონაცემებს
   ngOnInit(): void {
@@ -28,4 +29,7 @@ export class UserComponent implements OnInit, OnDestroy {
       this.userSub.unsubscribe();
   }
 
+  goBack():void {
+    this.location.back();
+  }
 }

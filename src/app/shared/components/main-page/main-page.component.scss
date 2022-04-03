@@ -8,3 +8,12 @@ div {
 div h3 {
     color: #9aa2ac;
 }
+div a {
+    background-color: #198754;
+    border-color: #198754;
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+div a:hover {
+    background-color: #157046;
+}

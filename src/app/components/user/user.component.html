@@ -1,5 +1,6 @@
 <div *ngIf="user" class="list-card">
     <div class="user-header">
+        <button class="btn btn-warning" style="margin-right: 20px;" (click)="goBack()">Go Back</button>
         <h1>{{user.name}}</h1>
         <button class="btn btn-success" [routerLink]="'/Users/' + user.id + '/Posts'">Posts</button>
     </div>
