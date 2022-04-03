@@ -1,0 +1,31 @@
+<div *ngIf="user" class="list-card">
+    <div class="user-header">
+        <h1>{{user.name}}</h1>
+        <button class="btn btn-success" [routerLink]="'/Users/' + user.id + '/Posts'">Posts</button>
+    </div>
+    <h4>Name: <h6>{{user.name}}</h6></h4>
+    <h4>UserName: <h6>{{user.username}}</h6></h4>
+    <h4>Email: <h6>{{user.email}}</h6></h4>
+    <h4>Address: </h4>
+    <ul>
+        <li><h4>Street - <h6>{{user.address.street}}</h6></h4></li>
+        <li><h4>Suite - <h6>{{user.address.suite}}</h6></h4></li>
+        <li><h4>City - <h6>{{user.address.city}}</h6></h4></li>
+        <li><h4>ZipCode - <h6>{{user.address.zipcode}}</h6></h4></li>
+        <li>
+            <h4>Location: </h4>
+            <ul>
+                <li><h4>Latitude - <h6>{{user.address.geo.lat}}</h6></h4></li>
+                <li><h4>Longtitude - <h6>{{user.address.geo.lng}}</h6></h4></li>
+            </ul>
+        </li>
+    </ul>
+    <h4>Phone: <h6>{{user.phone}}</h6></h4>
+    <h4>Website: <h6>{{user.website}}</h6></h4>
+    <h4>Company: </h4>
+    <ul>
+        <li><h4>Name - <h6>{{user.company.name}}</h6></h4></li>
+        <li><h4>CatchPhrase - <h6>{{user.company.catchPhrase}}</h6></h4></li>
+        <li><h4>Name - <h6>{{user.company.name}}</h6></h4></li>
+    </ul>
+</div>

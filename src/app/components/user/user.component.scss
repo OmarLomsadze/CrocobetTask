@@ -1,0 +1,30 @@
+h4 {
+    color:#d9e3ef;
+    border-left: 1px solid;
+    border-bottom: 1px solid white;
+    border-radius: 0px 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+h4 h6 {
+    color: #41c936;
+    margin: 0 0 0 20px;
+}
+ul {
+    list-style-type: none;
+}
+div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: dotted 1px green;
+}
+div div h1 {
+    color: #189541;
+    margin-right: 20px;
+}
+div div button {
+    padding: 8px 50px;
+}

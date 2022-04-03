@@ -1,0 +1,14 @@
+
+.list-card .user {
+    border: 1px solid #3d4b55;
+    padding: 5px 0 5px 30px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: #189541;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.list-card .user:hover {
+    background-color: #147f37;
+    padding: 10px 0 10px 40px;
+}

@@ -1,0 +1,8 @@
+<div class="list-card">
+    <!-- ყოველი იუზერისთვის შეიქმნას დივ კლასები რომელთაც ექნებათ თავისი კონკრეტული იუზერის გვერდზე გადასასვლელი ლინკი -->
+    <div *ngFor="let user of users;let i = index" class="user">
+        <a [routerLink]="'/Users/' + (i + 1)">
+            <h1>{{ user.name }}</h1>
+        </a>
+    </div>
+</div>
