@@ -1,5 +1,5 @@
 
-<button class="btn btn-warning" style="margin-right: 20px;" (click)="goBack()">Go Back</button>
+<button class="btn btn-warning" (click)="goBack()">Go Back</button>
 <div *ngFor="let post of posts">
     <p>~~ {{post.title}} ~~</p>
     <h1>{{post.body}}</h1>
